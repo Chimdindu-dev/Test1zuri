@@ -14,12 +14,12 @@ operation_types = {"addition": "+", "subtraction": "-", "multiplication": "*"}
 openai.api_key = OPENAI_API_KEY or os.getenv("OPENAI_API_KEY")
 
 
-# @app.route('/')
-# def index():
-#     return jsonify({
-#         'success': True,
-#         'message': 'Welcome to HNG 9 Stage 2 Task'
-#     })
+@app.route('/')
+def index():
+    return jsonify({
+        'success': True,
+        'message': 'WORKS'
+    })
 
 @app.route('/api/v1.0/calculate', methods=['POST'])
 def get_simple_calculation():
